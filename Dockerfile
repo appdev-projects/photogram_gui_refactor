@@ -31,7 +31,7 @@ USER gitpod
 WORKDIR /base-rails
 ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 RUN /bin/bash -l -c "rvm requirements"
-RUN /bin/bash -l -c "rvm install 2.6.5"
+RUN /bin/bash -l -c "rvm install 2.6.6"
 RUN /bin/bash -l -c "curl https://cli-assets.heroku.com/install.sh | sh"
 
 COPY Gemfile /base-rails/Gemfile
